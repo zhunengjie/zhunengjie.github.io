@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>allen</title>
+    <link>http://localhost:51185/</link>
+    <description>Recent content on allen</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:51185/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:51185/posts/my-first-post/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:51185/posts/my-first-post/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text nengjie.&lt;/p&gt;&#xA;&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello, world!</title>
+      <link>http://localhost:51185/posts/my-second-post/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:51185/posts/my-second-post/</guid>
+      <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello World!&lt;/h1&gt;&#xA;&lt;p&gt;This is my blog.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:51185/index-about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:51185/index-about/</guid>
+      <description>&lt;h1 id=&#34;gokarna&#34;&gt;Gokarna&lt;/h1&gt;&#xA;&lt;p&gt;Gokarna is a small temple town located in the Uttara Kannada district of Karnataka state in southern India.&lt;/p&gt;&#xA;&lt;h2 id=&#34;beaches&#34;&gt;Beaches&lt;/h2&gt;&#xA;&lt;p&gt;Something about beaches, &lt;strong&gt;which is &lt;em&gt;very&lt;/em&gt; important&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;every&lt;/li&gt;&#xA;&lt;li&gt;beach&lt;/li&gt;&#xA;&lt;li&gt;is beautiful&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
