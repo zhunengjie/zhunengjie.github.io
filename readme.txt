@@ -1,3 +1,8 @@
+- 基本信息
+1. github地址
+https://github.com/zhunengjie/zhunengjie.github.io
+2. 网站地址
+nengjie.site
 
 - 代码拉取
 1. 拉取
