@@ -26,4 +26,10 @@ hugo server
 2. 调试草稿
 hugo server -D
 
-
+- 图片
+1. 图片url
+路径：static/images/
+https://nengjie.site/images/avatar.webp
+2. icon下载
+https://simpleicons.org/
+路径：/static/svg/icons/

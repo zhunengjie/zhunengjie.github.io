@@ -9,6 +9,7 @@ languageCode = "en"
 pygmentsStyle = "monokai"
 theme = "gokarna"
 title = "能捷"
+copyright = '© 2023 ABC Widgets, Inc.'
 
 [params]
   avatarAltText = "avatar"
@@ -35,6 +36,19 @@ title = "能捷"
       });
     </script>
   """
+  customFooterHTML = '''
+
+    <script>console.log("Custom script or import");</script>
+    <script>
+    // 获取所有具有特定class的div元素
+    var divsToHide = document.querySelectorAll('footer.footer');
+     // 遍历这些元素并隐藏它们
+    divsToHide.forEach(function(div) {
+        //div.innerHTML = ''; // 清空这些div的内容
+        div.style.display = 'none';
+    });
+  </script>
+  '''
 
   description = "分布式爬虫，采集架构，逆向，WEB开发"
 #  footer = "The Marauders"
@@ -43,7 +57,7 @@ title = "能捷"
 
   socialIcons = [
     {name = "twitter", url = "https://example.com"},
-#    {name = "python", url = "/images/python-logo.jpeg"},
+    {name = "python", url = "/svg/icons/python.svg"},
     {name = "linkedin", url = "https://example.com"},
     {name = "stackoverflow", url = "https://example.com"},
     {name = "dribbble", url = "https://example.com"},
