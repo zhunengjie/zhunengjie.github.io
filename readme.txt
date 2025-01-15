@@ -9,4 +9,16 @@ git clone git@github.com:zhunengjie/zhunengjie.github.io.git
     git submodule init
     git submodule update
 
+- 文档 （gokarna主题）
+1. 主题官方文档
+https://gokarna-hugo.netlify.app/posts/
+2. 网站配置参考
+https://github.com/gokarna-theme/gokarna-hugo/blob/main/exampleSite/config.toml
+
+- 命令
+1. 调试
+hugo server
+2. 调试草稿
+hugo server -D
+
 
