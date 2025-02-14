@@ -50,7 +50,7 @@ copyright = '© 2023 ABC Widgets, Inc.'
   </script>
   '''
 
-  description = "分布式爬虫，采集架构，逆向，WEB开发"
+  description = "分布式爬虫，系统架构，逆向，WEB开发"
 #  footer = "The Marauders"
   metaKeywords = ["blog", "gokarna", "hugo"]
   showBackToTopButton = true # true or false for "back to top" button on posts and pages
