@@ -14,7 +14,7 @@ copyright = '© 2023 ABC Widgets, Inc.'
 [params]
   avatarAltText = "avatar"
   avatarSize = "size-m"
-  avatarURL = "/images/avatar.webp"
+  avatarURL = "/images/avatar3.webp"
 
   customHeadHTML = """
     <!-- KaTeX -->

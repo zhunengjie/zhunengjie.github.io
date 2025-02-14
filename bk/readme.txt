@@ -25,6 +25,8 @@ https://github.com/gokarna-theme/gokarna-hugo/blob/main/exampleSite/config.toml
 hugo server
 2. 调试草稿
 hugo server -D
+3. 发布网站
+hugo
 
 - 图片
 1. 图片url
