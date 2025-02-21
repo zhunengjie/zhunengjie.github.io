@@ -13,7 +13,7 @@ copyright = '© 2023 ABC Widgets, Inc.'
 
 [params]
   avatarAltText = "avatar"
-  avatarSize = "size-m"
+  avatarSize = "size-s"
   avatarURL = "/images/avatar3.webp"
 
   customHeadHTML = """
@@ -56,37 +56,44 @@ copyright = '© 2023 ABC Widgets, Inc.'
   showBackToTopButton = true # true or false for "back to top" button on posts and pages
 
   socialIcons = [
-    {name = "twitter", url = "https://example.com"},
-    {name = "python", url = "/svg/icons/python.svg"},
-    {name = "linkedin", url = "https://example.com"},
-    {name = "stackoverflow", url = "https://example.com"},
-    {name = "dribbble", url = "https://example.com"},
-    {name = "instagram", url = "https://example.com"},
-    {name = "twitch", url = "https://example.com"},
-    {name = "email", url = "mailto:example@example.com"}
+#    {name = "twitter", url = "https://example.com"},
+#    {name = "linkedin", url = "https://example.com"},
+#    {name = "stackoverflow", url = "https://example.com"},
+#    {name = "dribbble", url = "https://example.com"},
+#    {name = "instagram", url = "https://example.com"},
+#    {name = "twitch", url = "https://example.com"},
+#    {name = "email", url = "mailto:example@example.com"}
+
+     {name = "python", url = "/svg/icons/python.svg"},
+     {name = "go", url = "/svg/icons/go.svg"},
+     {name = "docker", url = "/svg/icons/docker.svg"},
+     {name = "scrapy", url = "/svg/icons/scrapy.svg"},
+     {name = "flask", url = "/svg/icons/flask.svg"},
+     {name = "gin", url = "/svg/icons/gin.svg"},
+     {name = "pytorch", url = "/svg/icons/pytorch.svg"},
   ]
 
 [menu]
   [[menu.main]]
-    name = "Home"
+    name = "主页" # Home
     pre = "<span data-feather='home'></span>"
     url = "/"
     weight = 1
 
   [[menu.main]]
-    name = "Posts"
+    name = "文章" # Posts
     pre = "<span data-feather='book'></span>"
     url = "/posts/"
     weight = 2
 
   [[menu.main]]
-    name = "Projects"
+    name = "项目" # Projects
     pre = "<span data-feather='code'></span>"
     url = "/projects/"
     weight = 3
 
   [[menu.main]]
-    name = "Tags"
+    name = "标签" # Tags
     pre = "<span data-feather='tag'></span>"
     url = "/tags/"
     weight = 4
