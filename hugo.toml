@@ -1,4 +1,4 @@
-baseURL = "https://example.org/"
+baseURL = "http://47.119.134.61"
 # 语言编码 英文：en， 中文：zh-cn
 defaultContentLanguage = "zh-cn"
 #defaultContentLanguage = "en"
