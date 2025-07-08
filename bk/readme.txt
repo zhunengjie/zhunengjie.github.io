@@ -35,3 +35,13 @@ https://nengjie.site/images/avatar.webp
 2. icon下载
 https://simpleicons.org/
 路径：/static/svg/icons/
+
+
+- 部署
+1. 改了项目源码
+docker compose restart
+或 docker compose up
+2. 更新了 docker-compose.yml
+docker compose down
+docker compose pull          # 可选，拉取新镜像
+docker compose up --build -d

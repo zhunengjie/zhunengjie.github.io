@@ -83,7 +83,7 @@ copyright = '© 2023 ABC Widgets, Inc.'
   [[menu.main]]
     name = "文章" # Posts
     pre = "<span data-feather='book'></span>"
-    url = "/posts/"
+    url = "/ /"
     weight = 2
 
   [[menu.main]]

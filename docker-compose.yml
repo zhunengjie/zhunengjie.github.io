@@ -12,5 +12,5 @@ services:
     ports:
       - "1313:1313"                      # 访问 http://localhost:1313
     environment:
-      - HUGO_ENV=development             # 根据需要改为 production
+      - HUGO_ENV=production             # 根据需要改为 production
     restart: unless-stopped
