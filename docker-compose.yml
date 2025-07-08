@@ -8,7 +8,7 @@ services:
     volumes:
       - .:/src                      # 将本地 Hugo 源码映射进去
 #      - ./hugo_cache:/tmp/hugo_cache     # 可选：启用构建缓存，加快二次编译
-    command: server --bind 0.0.0.0 --baseURL http://localhost --disableFastRender
+    command: server --bind 0.0.0.0 --baseURL http://47.119.134.61 --disableFastRender
     ports:
       - "1313:1313"                      # 访问 http://localhost:1313
     environment:
