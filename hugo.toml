@@ -1,4 +1,4 @@
-baseURL = "http://47.119.134.61"
+baseURL = "https://example.org/"
 # 语言编码 英文：en， 中文：zh-cn
 defaultContentLanguage = "zh-cn"
 #defaultContentLanguage = "en"
@@ -83,7 +83,7 @@ copyright = '© 2023 ABC Widgets, Inc.'
   [[menu.main]]
     name = "文章" # Posts
     pre = "<span data-feather='book'></span>"
-    url = "/ /"
+    url = "/posts/"
     weight = 2
 
   [[menu.main]]
@@ -117,6 +117,9 @@ copyright = '© 2023 ABC Widgets, Inc.'
 #    weight = 7
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.tableOfContents]
     startLevel = 1
     endLevel = 4
