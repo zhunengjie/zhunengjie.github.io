@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --star-color: #ffffff;
+  --secondary-color: #a0aec0;
+  --accent-color: #6366f1;
+  --card-bg: rgba(40, 40, 40, 0.8);
+  --card-bg-hover: rgba(50, 50, 50, 0.85);
+  --gradient-start: rgba(0, 0, 0, 0.7);
+  --gradient-end: rgba(15, 23, 42, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', 'Open Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  color: var(--star-color);
+  background-color: #000;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Starry background animation */
+@keyframes twinkle {
+  0%, 100% { 
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.star {
+  position: absolute;
+  background-color: var(--star-color);
+  border-radius: 50%;
+  animation: twinkle infinite ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.fade-in-down {
+  animation: fadeInDown 1s ease-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--accent-color), #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #818cf8, #a78bfa);
+}
+
+/* Skill star animation */
+@keyframes fillStar {
+  from { clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%); }
+  to { clip-path: polygon(50% 50%, 61% 35%, 77% 35%, 65% 47%, 70% 63%, 50% 53%, 30% 63%, 35% 47%, 23% 35%, 39% 35%); }
+}
+
+.skill-star {
+  clip-path: polygon(50% 50%, 61% 35%, 77% 35%, 65% 47%, 70% 63%, 50% 53%, 30% 63%, 35% 47%, 23% 35%, 39% 35%);
+}
+
+.skill-star.animate {
+  animation: fillStar 1s ease forwards;
+}
+
+/* Glow effect for tech feel */
+.glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(99, 102, 241, 0) 0%,
+    rgba(99, 102, 241, 0.2) 50%,
+    rgba(99, 102, 241, 0) 100%
+  );
+  transform: rotate(30deg);
+  animation: shine 6s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) rotate(30deg); }
+  100% { transform: translateX(100%) rotate(30deg); }
+}
+
+/* Pulse animation for interactive elements */
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.pulse-soft {
+  animation: pulse-soft 3s infinite;
+}
+
+/* Coze Chat SDK customization */
+:global(.coze-chat-app) {
+  --coze-bg-primary: rgba(15, 23, 42, 0.95);
+  --coze-bg-secondary: rgba(30, 41, 59, 0.8);
+  --coze-text-primary: #f1f5f9;
+  --coze-text-secondary: #cbd5e1;
+  --coze-border: rgba(94, 108, 132, 0.5);
+}
+
+:global(.coze-chat-app .coze-header) {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(8px);border-bottom: 1px solid var(--coze-border);
+}
+
+:global(.coze-chat-app .coze-footer) {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--coze-border);
+}
+
+:global(.coze-chat-app .coze-message-bubble-bot) {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* Custom card hover effect */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.15);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(to right, var(--accent-color), #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+:global(.coze-chat-app .coze-message-bubble-user) {
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
